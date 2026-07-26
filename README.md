@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=700&size=40&duration=2500&pause=99999&color=FFFFFF&center=true&vCenter=true&repeat=false&width=650&height=60&lines=Hi%2C+I'm+Udhaya+M+%F0%9F%91%8B" alt="Hi, I'm Udhaya M 👋" />
+  <img src="https://readme-typing-svg.demolab.com?font=Abril+Fatface&weight=400&size=42&duration=2500&pause=99999&color=FFFFFF&center=true&vCenter=true&repeat=false&width=650&height=65&lines=Hi%2C+I'm+Udhaya+M+%F0%9F%91%8B" alt="Hi, I'm Udhaya M 👋" />
 </p>
 
 <p align="center">
