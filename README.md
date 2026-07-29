@@ -12,6 +12,8 @@
   <a href="https://www.linkedin.com/in/udhaya-m-ud"><img src="https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat&logo=linkedin&logoColor=white"></a>
   <a href="mailto:udhayaud2208@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white"></a>
   <a href="https://github.com/UDHAYA-UD"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white"></a>
+  <a href="https://x.com/Udhaya0806"><img src="https://img.shields.io/badge/X-%23000000.svg?style=flat&logo=x&logoColor=white"></a>
+  <a href="https://www.reddit.com/user/udhayaud/"><img src="https://img.shields.io/badge/Reddit-FF4500?style=flat&logo=reddit&logoColor=white"></a>
 </p>
 
 <p align="center">
