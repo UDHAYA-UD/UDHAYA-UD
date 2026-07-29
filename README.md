@@ -98,7 +98,13 @@
 
 **ML & Data Science**
 <br/>
-`Supervised Learning` `EDA` `Model Evaluation` `Model Deployment` `XGBoost` `LightGBM` `Random Forest`
+![Supervised Learning](https://img.shields.io/badge/Supervised_Learning-00599C?style=flat)
+![EDA](https://img.shields.io/badge/EDA-F7931E?style=flat)
+![Model Evaluation](https://img.shields.io/badge/Model_Evaluation-44B78B?style=flat)
+![Model Deployment](https://img.shields.io/badge/Model_Deployment-FE4B4B?style=flat)
+![XGBoost](https://img.shields.io/badge/XGBoost-150458?style=flat)
+![LightGBM](https://img.shields.io/badge/LightGBM-8511FA?style=flat)
+![Random Forest](https://img.shields.io/badge/Random_Forest-228B22?style=flat)
 
 **Libraries & Frameworks**
 <br/>
