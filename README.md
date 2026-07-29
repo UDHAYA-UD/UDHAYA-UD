@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/UDHAYA-UD/UDHAYA-UD/main/assets/pokeball-intro.svg" alt="Hi, I'm Udhaya M 👋" width="800" />
+  <img src="https://raw.githubusercontent.com/UDHAYA-UD/UDHAYA-UD/main/assets/pokeball-intro.svg?v=2" alt="Hi, I'm Udhaya M 👋" width="800" />
 </p>
 
 <p align="center">
