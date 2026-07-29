@@ -1,19 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 250" width="800" height="250">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
   <defs>
-    <radialGradient id="flash" cx="50%" cy="60%" r="50%">
+    <radialGradient id="flash" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
       <stop offset="40%" stop-color="#ffe066" stop-opacity="0.6"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="6" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+    <filter id="pokeshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1a3a5c" flood-opacity="0.8"/>
     </filter>
-    <filter id="textglow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+    <filter id="textglow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -22,138 +18,132 @@
   </defs>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface');
-
-    /* Pokéball shake */
+    /* Pokéball shake and disappear */
     @keyframes shake {
-      0%, 100% { transform: translate(400px, 160px) rotate(0deg); }
-      0% { transform: translate(400px, 160px) rotate(0deg) scale(1); }
-      5% { transform: translate(400px, 160px) rotate(-12deg) scale(1); }
-      10% { transform: translate(400px, 160px) rotate(12deg) scale(1); }
-      15% { transform: translate(400px, 160px) rotate(-10deg) scale(1); }
-      20% { transform: translate(400px, 160px) rotate(8deg) scale(1); }
-      25% { transform: translate(400px, 160px) rotate(-4deg) scale(1); }
-      30% { transform: translate(400px, 160px) rotate(0deg) scale(1); }
-      /* open burst */
-      35% { transform: translate(400px, 160px) rotate(0deg) scale(1.1); }
-      40% { transform: translate(400px, 160px) rotate(0deg) scale(0.3); opacity: 1; }
-      45% { transform: translate(400px, 160px) rotate(0deg) scale(0.15); opacity: 0.5; }
-      50%, 100% { transform: translate(400px, 160px) rotate(0deg) scale(0); opacity: 0; }
+      0% { transform: translate(400px, 110px) rotate(0deg) scale(1); opacity: 1; }
+      5% { transform: translate(400px, 110px) rotate(-15deg) scale(1); }
+      10% { transform: translate(400px, 110px) rotate(15deg) scale(1); }
+      15% { transform: translate(400px, 110px) rotate(-12deg) scale(1); }
+      20% { transform: translate(400px, 110px) rotate(10deg) scale(1); }
+      25% { transform: translate(400px, 110px) rotate(-5deg) scale(1); }
+      30% { transform: translate(400px, 110px) rotate(0deg) scale(1); }
+      36% { transform: translate(400px, 110px) rotate(0deg) scale(1.15); }
+      42% { transform: translate(400px, 110px) rotate(0deg) scale(0.2); opacity: 0.5; }
+      48%, 100% { transform: translate(400px, 110px) rotate(0deg) scale(0); opacity: 0; }
     }
 
-    /* Flash burst */
+    /* Flash burst from center */
     @keyframes flashBurst {
-      0%, 34% { transform: translate(400px, 160px) scale(0); opacity: 0; }
-      38% { transform: translate(400px, 160px) scale(0.5); opacity: 1; }
-      42% { transform: translate(400px, 160px) scale(3); opacity: 0.9; }
-      50% { transform: translate(400px, 160px) scale(5); opacity: 0; }
+      0%, 34% { opacity: 0; r: 0; }
+      38% { opacity: 1; r: 20; }
+      44% { opacity: 0.8; r: 120; }
+      52% { opacity: 0; r: 200; }
       100% { opacity: 0; }
     }
 
-    /* Sparkles */
+    /* Sparkle particles */
     @keyframes sparkle {
-      0%, 34% { opacity: 0; transform: scale(0); }
-      40% { opacity: 1; transform: scale(1); }
-      55% { opacity: 1; transform: scale(1.2); }
-      70% { opacity: 0; transform: scale(0.5); }
-      100% { opacity: 0; }
+      0%, 34% { opacity: 0; }
+      40% { opacity: 1; }
+      60% { opacity: 0.8; }
+      80%, 100% { opacity: 0; }
     }
 
-    /* Text rise from ball */
+    /* Name text rising from pokeball */
     @keyframes textRise {
-      0%, 38% { opacity: 0; transform: translate(400px, 160px) scale(0.3); }
-      45% { opacity: 0.5; transform: translate(400px, 120px) scale(0.6); }
-      55% { opacity: 1; transform: translate(400px, 80px) scale(1); }
-      65%, 100% { opacity: 1; transform: translate(400px, 65px) scale(1); }
+      0%, 36% { opacity: 0; transform: translate(0, 40px) scale(0.3); }
+      48% { opacity: 0.7; transform: translate(0, 10px) scale(0.8); }
+      58% { opacity: 1; transform: translate(0, -2px) scale(1.03); }
+      65%, 100% { opacity: 1; transform: translate(0, 0) scale(1); }
     }
 
-    /* Subtitle typing appear */
-    @keyframes subtitleAppear {
-      0%, 60% { opacity: 0; transform: translateY(10px); }
-      75%, 100% { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Wave emoji */
+    /* Wave hand animation */
     @keyframes wave {
       0%, 60% { opacity: 0; }
       65% { opacity: 1; transform: rotate(0deg); }
-      70% { transform: rotate(14deg); }
+      70% { transform: rotate(16deg); }
       75% { transform: rotate(-8deg); }
-      80% { transform: rotate(14deg); }
+      80% { transform: rotate(16deg); }
       85% { transform: rotate(-4deg); }
       90% { transform: rotate(10deg); }
       95%, 100% { transform: rotate(0deg); opacity: 1; }
     }
 
-    .pokeball-group {
-      animation: shake 4s ease-in-out forwards;
-      transform-origin: center center;
+    .pokeball {
+      animation: shake 3.5s ease-in-out forwards;
     }
 
-    .flash-circle {
-      animation: flashBurst 4s ease-out forwards;
-      transform-origin: center center;
+    .flash {
+      animation: flashBurst 3.5s ease-out forwards;
     }
 
-    .name-text {
-      animation: textRise 4s ease-out forwards;
-      transform-origin: center center;
+    .sparkle {
+      animation: sparkle 3.5s ease-out forwards;
       opacity: 0;
     }
 
-    .wave-emoji {
-      animation: wave 4s ease-in-out forwards;
+    .name-group {
+      animation: textRise 3.5s ease-out forwards;
       opacity: 0;
     }
 
-    .sparkle-dot {
-      animation: sparkle 4s ease-out forwards;
+    .wave {
+      animation: wave 3.5s ease-in-out forwards;
       opacity: 0;
+      transform-origin: 680px 88px;
+    }
+
+    /* Pokémon-style text */
+    .poke-text {
+      font-family: 'Impact', 'Arial Black', 'Trebuchet MS', sans-serif;
+      font-size: 52px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      fill: #FFCB05;
+      stroke: #2A75BB;
+      stroke-width: 3.5;
+      paint-order: stroke fill;
+      filter: url(#pokeshadow);
     }
   </style>
 
-  <!-- Background -->
-  <rect width="800" height="250" fill="transparent" rx="12"/>
+  <!-- Flash burst circle -->
+  <circle class="flash" cx="400" cy="110" r="0" fill="url(#flash)"/>
 
-  <!-- Flash burst -->
-  <g class="flash-circle">
-    <circle cx="0" cy="0" r="30" fill="url(#flash)" opacity="0.8"/>
-  </g>
-
-  <!-- Sparkles -->
-  <circle class="sparkle-dot" cx="320" cy="100" r="3" fill="#ffe066" style="animation-delay: 0.1s"/>
-  <circle class="sparkle-dot" cx="480" cy="90" r="2.5" fill="#ffffff" style="animation-delay: 0.15s"/>
-  <circle class="sparkle-dot" cx="350" cy="140" r="2" fill="#ff6b6b" style="animation-delay: 0.2s"/>
-  <circle class="sparkle-dot" cx="460" cy="130" r="3" fill="#ffe066" style="animation-delay: 0.05s"/>
-  <circle class="sparkle-dot" cx="300" cy="70" r="2" fill="#ffffff" style="animation-delay: 0.25s"/>
-  <circle class="sparkle-dot" cx="500" cy="60" r="2.5" fill="#ffe066" style="animation-delay: 0.18s"/>
-  <circle class="sparkle-dot" cx="340" cy="50" r="2" fill="#ff6b6b" style="animation-delay: 0.12s"/>
-  <circle class="sparkle-dot" cx="470" cy="45" r="3" fill="#ffffff" style="animation-delay: 0.22s"/>
+  <!-- Sparkle dots -->
+  <circle class="sparkle" cx="310" cy="60" r="3" fill="#FFCB05" style="animation-delay: 0s"/>
+  <circle class="sparkle" cx="490" cy="50" r="2.5" fill="#fff" style="animation-delay: 0.08s"/>
+  <circle class="sparkle" cx="340" cy="130" r="2" fill="#2A75BB" style="animation-delay: 0.12s"/>
+  <circle class="sparkle" cx="465" cy="140" r="3" fill="#FFCB05" style="animation-delay: 0.04s"/>
+  <circle class="sparkle" cx="280" cy="90" r="2.5" fill="#fff" style="animation-delay: 0.16s"/>
+  <circle class="sparkle" cx="520" cy="80" r="2" fill="#FFCB05" style="animation-delay: 0.1s"/>
+  <circle class="sparkle" cx="350" cy="40" r="2" fill="#2A75BB" style="animation-delay: 0.2s"/>
+  <circle class="sparkle" cx="450" cy="35" r="2.5" fill="#fff" style="animation-delay: 0.14s"/>
 
   <!-- Pokéball -->
-  <g class="pokeball-group">
+  <g class="pokeball">
     <!-- Top half (red) -->
-    <path d="M -25 0 A 25 25 0 0 1 25 0 Z" fill="#EE1515" stroke="#222" stroke-width="2.5"/>
+    <path d="M -30 0 A 30 30 0 0 1 30 0 Z" fill="#EE1515" stroke="#1a1a2e" stroke-width="2.5"/>
     <!-- Bottom half (white) -->
-    <path d="M -25 0 A 25 25 0 0 0 25 0 Z" fill="#f0f0f0" stroke="#222" stroke-width="2.5"/>
+    <path d="M -30 0 A 30 30 0 0 0 30 0 Z" fill="#f0f0f0" stroke="#1a1a2e" stroke-width="2.5"/>
     <!-- Center band -->
-    <rect x="-27" y="-3" width="54" height="6" fill="#222"/>
-    <!-- Center button outer -->
-    <circle cx="0" cy="0" r="8" fill="#222"/>
-    <!-- Center button inner -->
-    <circle cx="0" cy="0" r="5" fill="#f0f0f0" stroke="#222" stroke-width="1.5"/>
+    <rect x="-32" y="-3.5" width="64" height="7" fill="#1a1a2e" rx="1"/>
+    <!-- Button outer -->
+    <circle cx="0" cy="0" r="9" fill="#1a1a2e"/>
+    <!-- Button inner -->
+    <circle cx="0" cy="0" r="5.5" fill="#f0f0f0" stroke="#1a1a2e" stroke-width="1.8"/>
     <!-- Shine -->
-    <ellipse cx="-10" cy="-12" rx="6" ry="3" fill="white" opacity="0.4" transform="rotate(-30 -10 -12)"/>
+    <ellipse cx="-12" cy="-14" rx="7" ry="3.5" fill="white" opacity="0.45" transform="rotate(-30 -12 -14)"/>
   </g>
 
   <!-- Name text -->
-  <g class="name-text" filter="url(#textglow)">
-    <text x="0" y="0" text-anchor="middle" font-family="'Abril Fatface', serif" font-size="48" fill="white" font-weight="400">
+  <g class="name-group" filter="url(#textglow)">
+    <text x="400" y="105" text-anchor="middle" dominant-baseline="central" class="poke-text">
       Hi, I'm Udhaya M
     </text>
   </g>
 
   <!-- Wave emoji -->
-  <text class="wave-emoji" x="598" y="80" font-size="40" text-anchor="middle">👋</text>
+  <text class="wave" x="668" y="100" font-size="42" dominant-baseline="central">👋</text>
 
 </svg>
