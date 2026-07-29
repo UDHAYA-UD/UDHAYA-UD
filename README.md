@@ -87,35 +87,9 @@
 
 ### 🛠️ Tech Stack
 
-**Languages**
-
 <p align="center">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,cpp,r&theme=dark" alt="Languages" />
-  </a>
-</p>
-
-**AI / ML & Data Science**
-
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=sklearn,opencv,anaconda&theme=dark" alt="AI & ML" />
-  </a>
-</p>
-
-**Backend & Frameworks**
-
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=flask,mysql,sqlite&theme=dark" alt="Backend" />
-  </a>
-</p>
-
-**Tools & Platforms**
-
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,github,vscode,jupyter,linux&theme=dark" alt="Tools" />
+    <img src="https://skillicons.dev/icons?i=python,cpp,r,sklearn,opencv,flask,mysql,git,github,vscode,linux,anaconda&perline=6&theme=dark" alt="Tech Stack" />
   </a>
 </p>
 
