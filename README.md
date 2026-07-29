@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/6.gif" width="45" alt="Charizard"/>
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=2E9EF7&center=true&vCenter=true&width=500&lines=AI+%2F+ML+Developer;I+train+models+and+ship+them;B.Tech+AI+%26+Data+Science+%40+DACE;Gotta+catch+%27em+all+%E2%80%94+bugs+included;Open+to+AI%2FML+Internships" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=600&size=24&pause=1000&color=2E9EF7&center=true&vCenter=true&width=600&lines=AI+%2F+ML+Developer;I+train+models+and+ship+them;B.Tech+AI+%26+Data+Science+%40+DACE;Gotta+catch+%27em+all+%E2%80%94+bugs+included;Open+to+AI%2FML+Internships" alt="Typing SVG" />
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" width="45" alt="Pikachu"/>
 </p>
 
