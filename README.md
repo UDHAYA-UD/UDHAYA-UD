@@ -127,13 +127,20 @@
 
 ### 📊 GitHub Stats
 
+<!-- If stats cards show errors, deploy your own instance: https://github.com/anuraghazra/github-readme-stats#deploy-on-your-own -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=UDHAYA-UD&show_icons=true&theme=radical&hide_border=true" height="165">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=UDHAYA-UD&layout=compact&theme=radical&hide_border=true" height="165">
+  <a href="https://github.com/UDHAYA-UD">
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api?username=UDHAYA-UD&show_icons=true&theme=radical&hide_border=true&count_private=true&cache_seconds=1800" height="165" alt="GitHub Stats">
+  </a>
+  <a href="https://github.com/UDHAYA-UD">
+    <img src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=UDHAYA-UD&layout=compact&theme=radical&hide_border=true&cache_seconds=1800" height="165" alt="Top Languages">
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=UDHAYA-UD&theme=radical&hide_border=true">
+  <a href="https://github.com/UDHAYA-UD">
+    <img src="https://streak-stats.demolab.com/?user=UDHAYA-UD&theme=radical&hide_border=true&cache_seconds=1800" alt="GitHub Streak">
+  </a>
 </p>
 
 <p align="center">
